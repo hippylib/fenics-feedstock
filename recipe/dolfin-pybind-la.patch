@@ -1,5 +1,5 @@
---- python/src/la.cpp	2019-05-22 14:26:22.000000000 -0500
-+++ python/src/la.cpp	2019-05-22 14:26:56.000000000 -0500
+--- dolfin-2019.1.0.orig/python/src/la.cpp	2019-05-22 14:26:22.000000000 -0500
++++ dolfin-2019.1.0/python/src/la.cpp	2019-05-22 14:26:56.000000000 -0500
 @@ -939,6 +939,10 @@
                         std::string method="default")
            { return std::unique_ptr<dolfin::LUSolver>(new dolfin::LUSolver(comm.get(), A, method)); }),
